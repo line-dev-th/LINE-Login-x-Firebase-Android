@@ -2,10 +2,11 @@ buildscript {
 	repositories {
 		google()
 		jcenter()
+		mavenCentral()
 	}
 	dependencies {
-		classpath 'com.android.tools.build:gradle:4.1.1'
-		classpath 'com.google.gms:google-services:4.3.4'
+		classpath 'com.android.tools.build:gradle:4.1.3'
+		classpath 'com.google.gms:google-services:4.3.5'
 	}
 }
 
@@ -13,6 +14,7 @@ allprojects {
 	repositories {
 		google()
 		jcenter()
+		mavenCentral()
 	}
 }
 
@@ -21,8 +23,8 @@ task clean(type: Delete) {
 }
 
 ext {
-	compileAndTargetSdk = 29
+	compileAndTargetSdk = 30
 	retrofitVersion = '2.9.0'
-	glideVersion = '4.11.0'
+	glideVersion = '4.12.0'
 	jwtVersion = '0.11.2'
 }
